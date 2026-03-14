@@ -57,6 +57,7 @@ pnpm run build
 ## 说明
 
 - 当前以个人常用应用为主，规则主要来自迁移和整理。
+- 部分应用规则迁移并整理自 [AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription)。
 - 默认仅分类中标记为启用的规则会在 GKD 中默认开启，其余规则建议按需启用。
 - 若某条规则失效，建议结合快照和官方文档自行调整。
 
