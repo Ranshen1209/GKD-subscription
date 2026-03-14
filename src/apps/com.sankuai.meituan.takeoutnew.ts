@@ -5,6 +5,24 @@ export default defineGkdApp({
   name: '美团外卖',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      desc: '点击开屏广告右上角跳过',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          activityIds:
+            'com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity',
+          matches:
+            '[vid="ll_skip" || id="com.sankuai.meituan.takeoutnew:id/ll_skip"][clickable=true][visibleToUser=true]',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '更新提示',
       fastQuery: true,
