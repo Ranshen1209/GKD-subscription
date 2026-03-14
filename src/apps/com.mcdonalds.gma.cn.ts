@@ -5,6 +5,23 @@ export default defineGkdApp({
   name: '麦当劳',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      desc: '点击开屏广告右上角跳过',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          activityIds: 'com.mcdonalds.gma.cn.activity.LaunchActivity',
+          matches:
+            '[vid="tv_skip" || id="com.mcdonalds.gma.cn:id/tv_skip"][clickable=true][visibleToUser=true]',
+        },
+      ],
+    },
+    {
       key: 1,
       name: '权限提示-通知权限',
       desc: '点击[取消]',
